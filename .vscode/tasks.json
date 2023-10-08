@@ -18,10 +18,11 @@
             "command": "dotnet",
             "type": "process",
             "args": [
-                "publish",
+                "build",
                 "${workspaceFolder}/vmt2vmat.sln",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+                "/consoleloggerparameters:NoSummary;ForceNoAlign",
+                "/p:Configuration=Release",
             ],
             "problemMatcher": "$msCompile"
         },

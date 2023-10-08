@@ -138,9 +138,7 @@ namespace Vmt2Vmat
                         // Whatever is after $basetexture is the texture name
                         textureColor = line.Substring(line.IndexOf("$basetexture") + "$basetexture".Length + 1).Replace("\"", "").Replace("\r", "");
                         // Remove leading and trailing spaces
-                        textureColor = textureColor.Trim();
-                        // Add to bumpmap list
-                        bumpmaps.Add(Path.Combine(output, textureColor.Replace(".vtf", "") + ".tga"));
+                        textureColor = "materials/" + textureColor.Trim() + ".tga";
                         break;
                     }
                 }
@@ -152,7 +150,7 @@ namespace Vmt2Vmat
                         // Whatever is after $bumpmap is the texture name
                         textureNormal = line.Substring(line.IndexOf("$bumpmap") + "$bumpmap".Length + 1).Replace("\"", "").Replace("\r", "");
                         // Remove leading and trailing spaces
-                        textureNormal = textureNormal.Trim();
+                        textureNormal = "materials/" + textureNormal.Trim() + ".tga";
                         // Add to bumpmap list
                         bumpmaps.Add(Path.Combine(output, textureNormal.Replace(".vtf", "") + ".tga"));
                         break;

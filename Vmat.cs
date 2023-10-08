@@ -2,7 +2,7 @@ namespace Vmt2Vmat
 {
     public class Vmat
     {
-        public readonly static string ShaderDefault = "vr_complex";
+        public readonly static string ShaderDefault = "csgo_complex";
         public readonly static string TextureAmbientOcclusionDefault = "materials/default/default_ao.tga";
         public readonly static string TextureColorDefault = "materials/default/default_color.tga";
         public readonly static string TextureNormalDefault = "materials/default/default_normal.tga";

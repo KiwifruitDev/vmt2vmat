@@ -9,5 +9,7 @@ Usage: Vmt2Vmat --output <output vmat folder> --shader <shader name> --aotex <am
 ## Example
 
 ```bash
-vmt2vmat.exe --deleteexisting --output "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo_addons\sfm\materials" "C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\kiwano\materials"
+vmt2vmat.exe --deleteexisting --output "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\content\csgo_addons\sfm\materials" "C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\kiwano\materials"
 ```
+
+Default shader is `csgo_complex`.
